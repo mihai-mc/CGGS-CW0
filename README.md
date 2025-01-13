@@ -4,7 +4,10 @@ This is the repository for the skeleton code of the entire coursework. To get th
 
 ```
 git clone --recurse-submodules https://github.com/avaxman/CGGS-CW0.git
+
 ```
+
+The PDF for the instructions is included.
 
 In an OSX/Linux environment, you next need to go to the `code` subfolder and write:
 ```
