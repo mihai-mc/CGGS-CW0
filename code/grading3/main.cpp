@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <random>
+#include <filesystem>
 
 using namespace Eigen;
 using namespace std;
