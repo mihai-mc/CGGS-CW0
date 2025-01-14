@@ -24,14 +24,14 @@ set(TUTORIAL_DATA_PATH ${PROJECT_SOURCE_DIR}/../data CACHE PATH "location of tut
 target_compile_definitions(common_includes INTERFACE "-DTUTORIAL_DATA_PATH=\"${TUTORIAL_DATA_PATH}\"")
 
 # The subprojects
-add_subdirectory(Section11)
-add_subdirectory(Section12)
-add_subdirectory(Section21)
-add_subdirectory(Section22)
-add_subdirectory(Section3)
-add_subdirectory(Section4)
-add_subdirectory(Grading21)
-add_subdirectory(Grading22)
-add_subdirectory(Grading3)
+add_subdirectory(section11)
+add_subdirectory(section12)
+add_subdirectory(section21)
+add_subdirectory(section22)
+add_subdirectory(section3)
+add_subdirectory(section4)
+add_subdirectory(grading21)
+add_subdirectory(grading22)
+add_subdirectory(grading3)
 
 
