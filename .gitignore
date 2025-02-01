@@ -1,4 +1,14 @@
+
+# Build files
 code/build/
+code/cmake-build-*
+
+# IDE
+.vscode
+.idea
+
+# macOS
+.DS_Store
 
 # Prerequisites
 *.d
