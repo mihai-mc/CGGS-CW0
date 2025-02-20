@@ -28,10 +28,21 @@ void callback_function() {
   ImGui::PopItemWidth();
   if (!isAnimating)
     return;
-  
-  
-  //TODO
-  
+
+  // Step 1: Apply gravity (free fall)
+  velocity.col(1).array() += -9.8 * timeStep;
+
+  // Step 2: Update position based on velocity
+  displacement += velocity * timeStep;
+  currV = origV + displacement;
+
+  // Step 3: Check for ground collision and bounce
+  if (currV(0, 1) <= 0.5)
+    for (int i = 0; i < velocity.rows(); i++)
+      if (velocity(i, 1) < 0)
+        velocity(i, 1) *= -1;
+
+  // Update visualization
   pMesh->updateVertexPositions(currV);
 }
 
